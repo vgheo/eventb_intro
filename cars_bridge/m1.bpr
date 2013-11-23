@@ -341,4 +341,12 @@
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL1"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="IL_in/inv1_1/INV"/>
+<org.eventb.core.prProof name="IL_in/inv1_2/INV"/>
+<org.eventb.core.prProof name="IL_in/inv1_4/INV"/>
+<org.eventb.core.prProof name="IL_in/inv1_5/INV"/>
+<org.eventb.core.prProof name="IL_out/inv1_2/INV"/>
+<org.eventb.core.prProof name="IL_out/inv1_3/INV"/>
+<org.eventb.core.prProof name="IL_out/inv1_4/INV"/>
+<org.eventb.core.prProof name="IL_out/inv1_5/INV"/>
 </org.eventb.core.prFile>
