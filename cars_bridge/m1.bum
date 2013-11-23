@@ -38,5 +38,5 @@
 <org.eventb.core.invariant name="_HTbasFSDEeOk1PYJeq6oQg" org.eventb.core.comment="gluing invariant (data refinement)" org.eventb.core.label="inv1_4" org.eventb.core.predicate="a+b+c=n"/>
 <org.eventb.core.invariant name="_HTco0FSDEeOk1PYJeq6oQg" org.eventb.core.comment="one-way" org.eventb.core.label="inv1_5" org.eventb.core.predicate="a=0 ∨ c=0"/>
 <org.eventb.core.variant name="_SnxqgFSIEeOk1PYJeq6oQg" org.eventb.core.expression="2∗a+b"/>
-<org.eventb.core.invariant name="_CgrOoFSJEeOk1PYJeq6oQg" org.eventb.core.label="dlf" org.eventb.core.predicate="(a + b &lt; d ∧ c = 0) ∨&#10;    c&gt;0 ∨&#10;    a&gt;0 ∨&#10;    (b &gt; 0 ∧ a = 0)"/>
+<org.eventb.core.invariant name="_CgrOoFSJEeOk1PYJeq6oQg" org.eventb.core.label="dlf" org.eventb.core.predicate="(a + b &lt; d ∧ c = 0) ∨&#10;    c&gt;0 ∨&#10;    a&gt;0 ∨&#10;    (b &gt; 0 ∧ a = 0)" org.eventb.core.theorem="true"/>
 </org.eventb.core.machineFile>
