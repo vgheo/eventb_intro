@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1385237319191" org.eventb.texttools.text_representation="machine m0&#10;&#10;sees ctx0&#10;&#10;variables&#10;&#9;n // current number of cars on the island+bridge&#10;&#10;invariants&#10;&#9;@inv0_1 n  ∈ ℕ&#10;&#9;@inv0_2 n ≤ d&#9;// FUN-2&#10;&#10;&#10;events&#10;&#9;event INITIALISATION&#10;&#9;end&#10;&#10;&#9;event ML_in&#10;&#9;then&#10;&#9;&#9;@act1 n≔n+1&#10;&#9;end&#10;&#10;&#9;event ML_out&#10;&#9;then&#10;&#9;&#9;@act1 n≔n−1&#10;&#9;end&#10;end&#10;" version="5">
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1385238792967" org.eventb.texttools.text_representation="machine m0&#10;&#10;sees ctx0&#10;&#10;variables&#10;&#9;n // current number of cars on the island+bridge&#10;&#10;invariants&#10;&#9;@inv0_1 n  ∈ ℕ&#10;&#9;@inv0_2 n ≤ d&#9;// FUN-2&#10;&#10;&#10;events&#10;&#9;event INITIALISATION&#10;&#9;then&#10;&#9;&#9;@act1 n≔0&#10;&#9;end&#10;&#10;&#9;event ML_in&#10;&#9;then&#10;&#9;&#9;@act1 n≔n+1&#10;&#9;end&#10;&#10;&#9;event ML_out&#10;&#9;then&#10;&#9;&#9;@act1 n≔n−1&#10;&#9;end&#10;end&#10;" version="5">
 <org.eventb.core.seesContext name="_sRht4FRyEeOQm7X7h_KxdA" org.eventb.core.target="ctx0"/>
-<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_eX4nEFR-EeOk1PYJeq6oQg" org.eventb.core.assignment="n≔0" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
 <org.eventb.core.variable name="_xSTgIFRyEeOQm7X7h_KxdA" org.eventb.core.comment="current number of cars on the island+bridge" org.eventb.core.identifier="n"/>
 <org.eventb.core.invariant name="_06RFUFRyEeOQm7X7h_KxdA" org.eventb.core.label="inv0_1" org.eventb.core.predicate="n  ∈ ℕ"/>
 <org.eventb.core.invariant name="_3RhQkFRyEeOQm7X7h_KxdA" org.eventb.core.comment="FUN-2" org.eventb.core.label="inv0_2" org.eventb.core.predicate="n ≤ d"/>
