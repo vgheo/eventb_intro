@@ -1,0 +1,14 @@
+target/
+.classpath
+*~
+.~lock.*#
+# Derived Rodin files
+*.bcc
+*.bcm
+*.bpo
+*.bps
+# NOTE: The primary storage of event-b models is .buc/.bum files 
+# - We DON'T use RODIN Teamwork (.xmb files) - see P1-HBK
+# *.buc
+# *.bum
+
