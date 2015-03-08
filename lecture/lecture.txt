@@ -12,7 +12,7 @@
 Requirements: 
 * RODIN Platform 3.1
     http://sourceforge.net/projects/rodin-b-sharp/files/Core_Rodin_Platform/3.1/
-* Atelier-B Provers (?)
+* Atelier-B Provers 2.1.0
 * egit 3.x
     Main Update Site: http://download.eclipse.org/egit/updates
 
