@@ -1,0 +1,214 @@
+
+	An Introduction to Event-B and RODIN
+
+
+* Overview
+- Using RODIN Platform
+- Worked model following "Modeling in Event-B: System and Software Engineering" Chapter II. Controlling Cars on a Bridge
+	- skip manual proofs as possible
+	
+
+* Tools 
+Requirements: 
+* RODIN Platform 3.1
+    http://sourceforge.net/projects/rodin-b-sharp/files/Core_Rodin_Platform/3.1/
+* Atelier-B Provers (?)
+* egit 3.x
+    Main Update Site: http://download.eclipse.org/egit/updates
+
+Caveats  (rodin 2.8) 
+- (TODO - check on current setup)?
+- disable egit decorations (prevents build)
+- camille - ISSUE - freeze on build ws
+
+
+* Controlling Cars on a Bridge
+
+1 Introduction
+
+refinement
+NOT programming
+ but formalization of system observation
+
+each model -  correctness - relative to a number of criteria
+	- relative to the previous ones
+last model - correct by construction.
+
+
+2 Requirements Document
+closed model 
+ - controller + environment
+
+- Initial requirements..
+
+3 Refinement Strategy
+- hint: start with the "what" (offered service)
+	- refine to "how" (technical solution design)
+
+4 Initial Model: Limiting the Number of Cars
+4.1
+Mainland
+Island/Bridge
+ML_out
+ML_in
+4.2. state
+const d 
+var n
+4.3. events
+
+ML_in
+ML_out
+
+- we are NOT programming
+- formallization of observation
+- absolute accuracy (not an idealization!)
+
+- not yet sure the model is consistent
+
+4.4 Before-after Predicates
+
+- state transition specification
+(event-b event is a particular case)
+
+4.5 Proving Invariant Preservation
+INV:
+Axioms
+Invariants
+|-
+Modified Invariant
+
+POG
+
+4.6 Sequent
+- used to express proof obligation rules
+
+H |- G
+
+intuitive meaning : the goal G is provable under the set of assumptions H.
+4.7 Applying the Invariant Preservation Rule
+- POG
+
+4.8 Proving the Proof Obligations
+
+4.9 Rules of Inference
+MON
+P2
+
+4.11 Proofs
+- tree 
+	node
+	- sequent
+	- inference rule - resulting in children
+
+ML_out / inv0_2 / INV - fails
+ML_in / inv0_1 / INV  - fails
+
+
+4.13 Improving the two Events: Introducing Guards
+- all prove
+
+4.14 Improving the Invariant Preservation Rule
+- guard is hypotesis
+
+4.16 Initialization
+4.17 Invariant Establishment Rule for the Initializing Event init
+
+
+4.20 Deadlock Freedom
+* Once started, the system should work for ever FUN-4
+
+4.21 Deadlock Freedom Rule
+
+
+4.22 Applying the Deadlock Freedom Proof Obligation Rule
+
+4.24 Proving the Deadlock Freedom Proof Obligation
+fix: The number of cars on bridge and island is limited but positive FUN-2
+
+proof:  ah: n<d or n=d
+
+5 First Refinement: Introducing the One Way Bridge
+
+
+5.1. Introduction
+refine ML_in, ML_out
+new IL_in, IL_out
+
+5.2 Refining the State
+a,b,c
+
+5.3 Refining the Abstract Events
+
+proposed concrete versions (refined versions)
+
+
+5.5 Informal Proofs of Refinement
+
+5.6 Proving the Correct Refinements of Abstract Events
+Guard Strengthening 
+Correct Refinement
+
+5.7 Applying the Refinement Rules
+
+5.8. Refining the Initialization Event Init
+
+5.11 Introducing New Events
+IL_out
+IL_in
+
+5.12 The Empty Action skip
+- does not change the state
+
+when refined : refined event does not change the abstract state.
+
+5.13 Proving that the New Events are Correct
+- autoprove
+
+5.14 Proving the Convergence of the New Events
+5.15 Applying the Non-divergence Proof Obligation Rules
+5.16 Relative Deadlock Freedom
+5.17 Applying Relative Deadlock Freedom Proof Obligation
+5.18 More Inference Rules
+- Proving the Deadlock Freedom Proof Obligation.
+
+sl: d>0
+autoproof (PP)
+
+6 Second Refinement: Introducing the Traffic Lights
+ Fig 7.
+ml_tl, il_tl
+
+6.1 Refining the State
+- adding new variables = "superposition"
+
+6.2 Refining Abstract Events
+
+ML_out, IL_out events - enabled by the traffic lights
+
+6.3 Introducing New Events
+
+
+
+* Questionnaire
+
+
+Q1. Do you consider the use of Event-B/RODIN as formal specification method in the development of safety-critical systems would be benneficial for the delivered product:
+- safety
+- functional quality
+- cost
+- effort estimation accuracy
+(Mark for each: 0=low .. 5=high)
+
+Q2. What would be your main concerns regarding such use ?
+
+
+Q3. Would you be interested in joining a development project for a safety-critical product using Event-B/RODIN, appropriate training provided ?
+
+
+
+* Links
+
+http://www.event-b.org/abook.html
+http://www.event-b.org/A_ch1.pdf
+http://www.event-b.org/A_ch2.pdf
+
