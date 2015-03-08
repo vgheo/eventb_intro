@@ -1,0 +1,13 @@
+
+
+* having iUMLb statemachines installed results in exceptions during build
+java.lang.NullPointerException
+	at org.eclipse.compare.contentmergeviewer.ContentMergeViewer$ContentMergeViewerLayout.layout(ContentMergeViewer.java:121)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1644)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1650)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1650)
+
+FIX: uninstall
+recommended: avoid it being installed.
+
+
