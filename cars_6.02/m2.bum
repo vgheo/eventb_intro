@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1385325865184" org.eventb.texttools.text_representation="machine m2 refines m1&#10;&#10;sees&#10;&#9;ctx0&#10;&#9;color&#10;&#10;variables&#10;&#9;a b c // unchanged&#10;&#10;&#9;ml_tl&#10;&#9;il_tl&#10;&#10;invariants&#10;&#10;&#9;@inv2_1 ml_tl ∈ COLOR&#10;&#9;@inv2_2 il_tl ∈ COLOR&#10;&#10;&#9;@inv2_3 ml_tl = green ⇒&#10;&#9;&#9;a + b &lt; d&#9;∧  c=0    // room left &amp; bridge clear (safety)&#10;&#10;&#9;@inv2_4  il_tl = green ⇒ 0 &lt; b ∧ a = 0 // cars on island &amp; bridge clear&#10;&#10;&#10;events&#10;&#10; &#9;event ML_out refines ML_out&#10; &#9;when&#10; &#9;&#9;@g1 ml_tl=green&#10; &#9;then&#10; &#9;&#9;@a1 a≔a+1&#10; &#9;end&#10;&#10;&#9;event IL_out refines IL_out&#10;&#9;when&#10;&#9;&#9;@g1 il_tl=green&#10;&#9;then&#10;&#9;&#9;@a1 b,c ≔ b−1,c+1&#10;&#9;end&#10;&#10;  event INITIALISATION&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_sBnXoFU4EeOwU-ht9kGsKQ" org.eventb.core.target="m1"/>
+<org.eventb.core.seesContext name="_sBn-sFU4EeOwU-ht9kGsKQ" org.eventb.core.target="ctx0"/>
+<org.eventb.core.seesContext name="_sBolwFU4EeOwU-ht9kGsKQ" org.eventb.core.target="color"/>
+<org.eventb.core.event name="_4sq6sFVIEeOwU-ht9kGsKQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_out">
+<org.eventb.core.refinesEvent name="_K22MIFVJEeOwU-ht9kGsKQ" org.eventb.core.target="ML_out"/>
+<org.eventb.core.guard name="_4srhwFVIEeOwU-ht9kGsKQ" org.eventb.core.label="g1" org.eventb.core.predicate="ml_tl=green"/>
+<org.eventb.core.action name="_4ssI0FVIEeOwU-ht9kGsKQ" org.eventb.core.assignment="a≔a+1" org.eventb.core.label="a1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_4ssv4FVIEeOwU-ht9kGsKQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="IL_out">
+<org.eventb.core.refinesEvent name="_NISDQFVJEeOwU-ht9kGsKQ" org.eventb.core.target="IL_out"/>
+<org.eventb.core.guard name="_4stW8FVIEeOwU-ht9kGsKQ" org.eventb.core.label="g1" org.eventb.core.predicate="il_tl=green"/>
+<org.eventb.core.action name="_4st-AFVIEeOwU-ht9kGsKQ" org.eventb.core.assignment="b,c ≔ b−1,c+1" org.eventb.core.label="a1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.variable name="_zqPV4FU4EeOwU-ht9kGsKQ" org.eventb.core.identifier="a"/>
+<org.eventb.core.variable name="_zqP88FU4EeOwU-ht9kGsKQ" org.eventb.core.identifier="b"/>
+<org.eventb.core.variable name="_zqP88VU4EeOwU-ht9kGsKQ" org.eventb.core.comment="unchanged" org.eventb.core.identifier="c"/>
+<org.eventb.core.variable name="_vGKtwFU4EeOwU-ht9kGsKQ" org.eventb.core.identifier="ml_tl"/>
+<org.eventb.core.variable name="_vGL74FU4EeOwU-ht9kGsKQ" org.eventb.core.identifier="il_tl"/>
+<org.eventb.core.invariant name="_3-yUQFU4EeOwU-ht9kGsKQ" org.eventb.core.label="inv2_1" org.eventb.core.predicate="ml_tl ∈ COLOR"/>
+<org.eventb.core.invariant name="_3-ziYFU4EeOwU-ht9kGsKQ" org.eventb.core.label="inv2_2" org.eventb.core.predicate="il_tl ∈ COLOR"/>
+<org.eventb.core.invariant name="_l-8OEFU5EeOwU-ht9kGsKQ" org.eventb.core.comment="room left &amp; bridge clear (safety)" org.eventb.core.label="inv2_3" org.eventb.core.predicate="ml_tl = green ⇒&#10;&#9;&#9;a + b &lt; d&#9;∧  c=0"/>
+<org.eventb.core.invariant name="_94Vn8FVAEeOwU-ht9kGsKQ" org.eventb.core.comment="cars on island &amp; bridge clear" org.eventb.core.label="inv2_4" org.eventb.core.predicate="il_tl = green ⇒ 0 &lt; b ∧ a = 0"/>
+</org.eventb.core.machineFile>
