@@ -3,6 +3,7 @@
 <org.eventb.core.prProof name="INITIALISATION/inv0_1/INV"/>
 <org.eventb.core.prProof name="INITIALISATION/inv0_2/INV"/>
 <org.eventb.core.prProof name="ML_in/inv0_1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+<org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
@@ -17,6 +18,7 @@
 <org.eventb.core.prProof name="ML_in/inv0_2/INV"/>
 <org.eventb.core.prProof name="ML_out/inv0_1/INV"/>
 <org.eventb.core.prProof name="ML_out/inv0_2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+<org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p1,p2">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
