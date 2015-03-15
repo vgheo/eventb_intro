@@ -7,13 +7,13 @@
 <org.eventb.core.variable name="_xSTgIFRyEeOQm7X7h_KxdA" org.eventb.core.comment="current number of cars on the island+bridge" org.eventb.core.identifier="n"/>
 <org.eventb.core.invariant name="_06RFUFRyEeOQm7X7h_KxdA" org.eventb.core.label="inv0_1" org.eventb.core.predicate="n  ∈ ℕ"/>
 <org.eventb.core.invariant name="_3RhQkFRyEeOQm7X7h_KxdA" org.eventb.core.comment="FUN-2" org.eventb.core.label="inv0_2" org.eventb.core.predicate="n ≤ d"/>
-<org.eventb.core.event name="_Yfe_YFR1EeOQm7X7h_KxdA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_in">
-<org.eventb.core.guard name="_6IofQFSAEeOk1PYJeq6oQg" org.eventb.core.label="grd1" org.eventb.core.predicate="n&lt;d"/>
-<org.eventb.core.action name="_CxNtYVR7EeOk1PYJeq6oQg" org.eventb.core.assignment="n≔n+1" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
-<org.eventb.core.event name="_YfgNgFR1EeOQm7X7h_KxdA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_out">
+<org.eventb.core.event name="_xSTgIFRyEeOQm7X7h_KxdB" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_in">
 <org.eventb.core.action name="_CxQJoFR7EeOk1PYJeq6oQg" org.eventb.core.assignment="n≔n−1" org.eventb.core.label="act1"/>
 <org.eventb.core.guard name="_6ItXwFSAEeOk1PYJeq6oQg" org.eventb.core.label="grd1" org.eventb.core.predicate="n&gt;0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_Yfe_YFR1EeOQm7X7h_KxdA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_out">
+<org.eventb.core.guard name="_6IofQFSAEeOk1PYJeq6oQg" org.eventb.core.label="grd1" org.eventb.core.predicate="n&lt;d"/>
+<org.eventb.core.action name="_CxNtYVR7EeOk1PYJeq6oQg" org.eventb.core.assignment="n≔n+1" org.eventb.core.label="act1"/>
 </org.eventb.core.event>
 <org.eventb.core.invariant name="_npa8gFSBEeOk1PYJeq6oQg" org.eventb.core.label="dlf" org.eventb.core.predicate="n&lt;d ∨  0&lt;n" org.eventb.core.theorem="true"/>
 </org.eventb.core.machineFile>
