@@ -25,6 +25,12 @@
 <org.eventb.core.guard name="_DBzGAFVKEeOwU-ht9kGsKQ" org.eventb.core.label="g3" org.eventb.core.predicate="a=0"/>
 <org.eventb.core.action name="_DBzGAVVKEeOwU-ht9kGsKQ" org.eventb.core.assignment="il_tl ≔ green" org.eventb.core.label="a1"/>
 </org.eventb.core.event>
+<org.eventb.core.event name="_zqPV4FU4EeOwU-ht9kGsKT" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ML_in">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="ML_in"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_zqPV4FU4EeOwU-ht9kGsKU" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="IL_in">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="IL_in"/>
+</org.eventb.core.event>
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
 <org.eventb.core.variable name="_zqPV4FU4EeOwU-ht9kGsKQ" org.eventb.core.identifier="a"/>
 <org.eventb.core.variable name="_zqP88FU4EeOwU-ht9kGsKQ" org.eventb.core.identifier="b"/>
