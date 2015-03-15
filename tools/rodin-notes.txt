@@ -11,3 +11,9 @@ FIX: uninstall
 recommended: avoid it being installed.
 
 
+* Camille 3.1.0
+ISSUE - camille reassigns UUIDs to all model elements on save
+	- this makes it unusable with VCS
+	
+See branch camille_try1.
+	
