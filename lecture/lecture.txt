@@ -206,7 +206,7 @@ Q3. Would you be interested in joining a development project for a safety-critic
 
 
 
-* Links
+* Resources
 
 http://www.event-b.org/abook.html
 http://www.event-b.org/A_ch1.pdf

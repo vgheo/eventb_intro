@@ -24,7 +24,7 @@ Event-B Book Rule | RODIN Rule |Comments
 b:MON		| ??  		| UI : sl/ds
 b:OR_R1 	| ??
 b:OR_R2 	| ??
-b:OR_L		| [COMPOSITE_OR_L](#COMPOSITE_OR_L)
+b:OR_L		| [COMPOSITE_OR_L](#user-content-composite_or_l)
 b:HYP 		| HYP
 b:FALSE_L	| FALSE_HYP
 b:EQ_LR		| EQL_LR
