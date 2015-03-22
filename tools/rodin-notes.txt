@@ -23,7 +23,7 @@ See branch camille_try1.
 ### Remark on rules implemented by Atelier-B provers 
 
 In relative DLF proof - ch 5.18
-    c∈ℕ , ¬c>0 ⊢	c=0 ``
+    c∈ℕ , ¬c>0 ⊢ c=0
 
 * ML cannot discharge
 * PP can discharge
