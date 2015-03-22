@@ -20,8 +20,8 @@ RODIN rule names have no prefix
 
 * b:MON	~ ??
 	- UI : sl/ds
-* b:OR_R1
-* b:OR_R2
+* b:OR_R1 ~??
+* b:OR_R2 ~??
 * b:OR_L
 * b:HYP ~ HYP
 * b:FALSE_L	~ FALSE_HYP
@@ -41,7 +41,7 @@ RODIN rule names have no prefix
 * b:AND_L  ~ AND_L
 * b:AND_R  ~ AND_R
 * b:IMP_L
-* b:IMP_R
+* b:IMP_R ~ IMP_R
 * b:NOT_L
 
 == Arithmetic rules ==
